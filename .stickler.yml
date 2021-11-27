@@ -1,0 +1,10 @@
+linters:  
+       stylelint:
+           config: 'stylelint.config.js'
+files:
+   ignore:
+    - 'bower_components/*'
+    - 'node_modules/*'
+    - 'vendor/*'
+fixers:
+    enable: true
