@@ -18,7 +18,7 @@ use Magento\Store\Model\StoreManagerInterface;
  */
 class Config extends AbstractHelper
 {
-    protected const CONFIG_PATH_GENERAL = 'theme_full_checkout/general/%s';
+    public const CONFIG_PATH_GENERAL = 'theme_full_checkout/general/%s';
 
     /**
      * @var ScopeConfigInterface

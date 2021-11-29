@@ -28,7 +28,7 @@ class AddFullCheckoutLayoutUpdateHandleObserver implements ObserverInterface
     /**
      * Category Custom Layout.
      */
-    protected const LAYOUT_HANDLE_FULL_CHECKOUT = 'theme_full_checkout';
+    public const LAYOUT_HANDLE_FULL_CHECKOUT = 'theme_full_checkout';
 
     /**
      * @var Config
