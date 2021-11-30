@@ -25,11 +25,20 @@ var config = {
             "Magento_Checkout/js/view/payment": {
                 "O2TI_ThemeFullCheckout/js/mixin/payment-mixin": true
             },
-            "Magento_Checkout/js/view/payment/list": {
-                "O2TI_ThemeFullCheckout/js/mixin/payment/list-mixin": true
+            "Magento_Checkout/js/view/form/element/email": {
+                "O2TI_ThemeFullCheckout/js/mixin/form/element/email-mixin": true
+            },
+            "Amazon_Payment/js/view/form/element/email": {
+                "O2TI_ThemeFullCheckout/js/mixin/form/element/amazon-email-mixin": true
             },
             "Magento_Checkout/js/view/shipping-information": {
                 "O2TI_ThemeFullCheckout/js/mixin/shipping-information-mixin": true
+            },
+            "Magento_Checkout/js/view/payment/list": {
+                "O2TI_ThemeFullCheckout/js/mixin/payment/list-mixin": true
+            },
+            "Magento_SalesRule/js/view/payment/discount": {
+                "O2TI_ThemeFullCheckout/js/mixin/sales-rule/payment/discount-mixin": true
             },
             "Magento_Checkout/js/view/billing-address": {
                 "O2TI_ThemeFullCheckout/js/mixin/billing-address-mixin": true
@@ -48,9 +57,6 @@ var config = {
             },
             "Magento_Checkout/js/view/summary/cart-items": {
                 "O2TI_ThemeFullCheckout/js/mixin/summary/cart-items-mixin": true
-            },
-            "Magento_SalesRule/js/view/payment/discount": {
-                "O2TI_ThemeFullCheckout/js/mixin/sales-rule/payment/discount-mixin": true
             }
         }
     }

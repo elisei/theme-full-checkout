@@ -10,6 +10,17 @@
 
 & when (@media-common = true) {
     .full-checkout {
+    	.form-login {
+            .fieldset {
+                &.hidden-fields {
+                    margin: 0;
+                    .actions-toolbar {
+                        margin-left: @indent__xs;
+                        margin-right: @indent__xs;
+                    }
+                }
+            }
+        }
         .checkout-payment-method {
             .step-title {
                 &:extend(.abs-theme-full-checkout-title-sessions all);
