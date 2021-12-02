@@ -9,9 +9,6 @@
 namespace O2TI\ThemeFullCheckout\Plugin;
 
 use Magento\Checkout\Block\Checkout\LayoutProcessor;
-use Magento\Framework\App\Config\ScopeConfigInterface;
-use Magento\Store\Model\ScopeInterface;
-use Magento\Store\Model\StoreManagerInterface;
 use O2TI\ThemeFullCheckout\Helper\Config;
 
 /**
@@ -25,27 +22,11 @@ class ThemeFullCheckoutLayoutPlugin
     private $config;
 
     /**
-     * @var ScopeInterface
-     */
-    private $scopeConfig;
-
-    /**
-     * @var StoreManagerInterface
-     */
-    private $storeManagerInterface;
-
-    /**
-     * @param ScopeConfigInterface  $scopeConfig
-     * @param StoreManagerInterface $storeManagerInterface
-     * @param Config                $config
+     * @param Config $config
      */
     public function __construct(
-        ScopeConfigInterface $scopeConfig,
-        StoreManagerInterface $storeManagerInterface,
         Config $config
     ) {
-        $this->scopeConfig = $scopeConfig;
-        $this->storeManagerInterface = $storeManagerInterface;
         $this->config = $config;
     }
 
