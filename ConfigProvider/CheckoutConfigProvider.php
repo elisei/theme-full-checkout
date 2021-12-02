@@ -9,7 +9,6 @@
 namespace O2TI\ThemeFullCheckout\ConfigProvider;
 
 use Magento\Checkout\Model\ConfigProviderInterface;
-use Magento\Framework\App\Config\ScopeConfigInterface;
 use Magento\Theme\Block\Html\Header\Logo;
 use O2TI\ThemeFullCheckout\Helper\Config;
 
