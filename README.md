@@ -26,7 +26,11 @@ Um layout agradável e recursos pensados para otimizar a experiência do usuári
 Recursos de destaque
 - Remoção de pontos de fuga
 - Floating Labels
-- Layout de implementação orgânica, absorvendo caracteristicas do seu próprio tema.
+- Layout de implementação orgânica, absorvendo características do seu próprio tema.
+
+## Instalação e Configuração
+
+Visite nossa [Wiki](wiki) e veja como configurar e instalar nosso módulo.
 
 ## License
 
