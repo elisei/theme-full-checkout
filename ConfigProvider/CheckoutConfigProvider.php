@@ -28,8 +28,8 @@ class CheckoutConfigProvider implements ConfigProviderInterface
     private $logo;
 
     /**
-     * @param Logo    $logo
-     * @param Config  $config
+     * @param Logo   $logo
+     * @param Config $config
      */
     public function __construct(
         Logo $logo,
