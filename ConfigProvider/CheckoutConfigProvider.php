@@ -24,26 +24,18 @@ class CheckoutConfigProvider implements ConfigProviderInterface
     private $config;
 
     /**
-     * @var ScopeConfigInterface
-     */
-    private $scopeConfig;
-
-    /**
      * @var Logo
      */
     private $logo;
 
     /**
-     * @param ScopeConfigInterface $scopeConfig
-     * @param Logo                 $logo
-     * @param Config               $config
+     * @param Logo    $logo
+     * @param Config  $config
      */
     public function __construct(
-        ScopeConfigInterface $scopeConfig,
         Logo $logo,
         Config $config
     ) {
-        $this->scopeConfig = $scopeConfig;
         $this->logo = $logo;
         $this->config = $config;
     }

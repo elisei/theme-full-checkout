@@ -1,49 +1,32 @@
-# Full Checkout
+# Theme Full Checkout
+
 Um Checkout Completo, com tudo que você precisa para atingir altas taxas de conversão em seu Magento 2.
 
-> Estado
+# Badges
 
-[![Codacy Badge](https://app.codacy.com/project/badge/Grade/5af1a61cc6674545be65ea6d23a6a01d)](https://www.codacy.com/app/elisei/theme-full-checkout?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=elisei/theme-full-checkout&amp;utm_campaign=Badge_Grade)
-[![StyleCI](https://styleci.io/repos/187421346/shield)](https://styleci.io/repos/187421346)
+Status Atual
 
-> Estatísticas
+[![Build Status](https://app.travis-ci.com/elisei/theme-full-checkout.svg?branch=Magento%402.4)](https://app.travis-ci.com/elisei/theme-full-checkout)
+[![StyleCI](https://github.styleci.io/repos/432332292/shield?branch=Magento@2.4)](https://github.styleci.io/repos/432330655?branch=Magento@2.4)
+[![Codacy Badge](https://app.codacy.com/project/badge/Grade/939d6dc3ac134fb384b67075bda95022)](https://www.codacy.com/gh/elisei/theme-full-checkout/dashboard?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=elisei/theme-full-checkout&amp;utm_campaign=Badge_Grade)
+
+Estatísticas
 
 [![Total Downloads](https://poser.pugx.org/o2ti/theme-full-checkout/downloads)](https://packagist.org/packages/o2ti/theme-full-checkout)
+[![Monthly Downloads](https://poser.pugx.org/o2ti/theme-full-checkout/d/monthly)](https://packagist.org/packages/o2ti/theme-full-checkout)
 
-> Versão
+Versões
 
-[![Version](https://poser.pugx.org/o2ti/theme-full-checkout/version)](//packagist.org/packages/o2ti/theme-full-checkout)
+[![Latest Stable Version](https://poser.pugx.org/o2ti/theme-full-checkout/v/stable)](https://packagist.org/packages/o2ti/theme-full-checkout)
 
 ## Recursos
 
-### Suporte a compra em Guest
+Um layout agradável e recursos pensados para otimizar a experiência do usuário durante o checkout.
 
-> O módulo foi totalmente pensado para permitir o perfil de compra anõnima obtendo ainda todos os dados necessários para pagamento e emissão fiscal da compra.
-
-### Validação de dados
-
-*   Documento Fiscal (CPF ou CNPJ)
-*   Telefone (Celular ou Fixo)
-*   CEP
-*   Obrigatóridade de campos do endereço para o padrão brasileiro
-
-### Máscaras
-
-*   Documento fiscal
-*   Telefone
-*   CEP
-
-### Facilidades para o processo de compra
-
-*   Simplificação para o processo de identificação do usuário
-*   Tela de sucesso detalhada
-*   Remoção de pontos de fuga
-*   Tratamento de dados aprimorados (mobile ou desktop)
-*   Layout aprimorado para o fluxo de compra
-
-### Instalação e Configuração
-
-Visite nossa [Wiki](https://github.com/elisei/theme-full-checkout/wiki)
+Recursos de destaque
+- Remoção de pontos de fuga
+- Floating Labels
+- Layout de implementação orgânica, absorvendo caracteristicas do seu próprio tema.
 
 ## License
 
