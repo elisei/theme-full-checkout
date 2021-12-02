@@ -6,7 +6,7 @@
  */
 -->
 <div class="logo-checkout">
-	<a data-bind="attr: {'href': getLogoUrl(), 'title': getLogoAlt() }" >
+	<a data-bind="attr: {'href': 'getLogoUrl()', 'title': getLogoAlt() }, click: goToCartUrl" >
 		<span>
 			<img data-bind="attr: {'src': getLogoSrc(), 'alt': getLogoAlt(), 'title': getLogoAlt() }" class="img-logo-checkout" />
 		</span>
