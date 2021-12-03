@@ -8,6 +8,7 @@ Status Atual
 
 [![Build Status](https://app.travis-ci.com/elisei/theme-full-checkout.svg?branch=Magento%402.3)](https://app.travis-ci.com/elisei/theme-full-checkout)
 [![StyleCI](https://github.styleci.io/repos/432332292/shield?branch=Magento@2.3)](https://github.styleci.io/repos/432330655?branch=Magento@2.3)
+[![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/elisei/theme-full-checkout/badges/quality-score.png?b=Magento%402.4)](https://scrutinizer-ci.com/g/elisei/theme-full-checkout/)
 [![Codacy Badge](https://app.codacy.com/project/badge/Grade/939d6dc3ac134fb384b67075bda95022)](https://www.codacy.com/gh/elisei/theme-full-checkout/dashboard?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=elisei/theme-full-checkout&amp;utm_campaign=Badge_Grade)
 
 Estatísticas
