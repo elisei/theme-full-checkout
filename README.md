@@ -31,7 +31,7 @@ Recursos de destaque
 
 ## Instalação e Configuração
 
-Visite nossa [Wiki](wiki) e veja como configurar e instalar nosso módulo.
+Visite nossa [Wiki](https://github.com/elisei/theme-full-checkout/wiki) e veja como configurar e instalar nosso módulo.
 
 ## License
 
