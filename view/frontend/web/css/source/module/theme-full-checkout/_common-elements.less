@@ -15,7 +15,7 @@
 & when (@media-common = true) {
     .abs-theme-full-checkout-title-sessions {
         .lib-heading(h2);
-        .lib-css(border-bottom, unset);
+        .lib-css(border-bottom, @theme-full-checkout-step-title__border);
 
         margin-bottom: @indent__base + @indent__xs;
         margin-top: unset;
@@ -30,9 +30,8 @@
 
     .abs-theme-full-checkout-sub-title-methods {
         .lib-font-size(1.6rem);
-        .lib-css(border-top, unset);
         .lib-css(border-bottom, unset);
-        .lib-css(border-top, @theme-full-checkout-step-title__border);
+        .lib-css(border-top, @theme-full-checkout__border);
 
         margin-bottom: unset;
         margin-top: unset;
@@ -42,7 +41,7 @@
 
     .abs-theme-full-checkout-sub-title-sessions {
         .lib-font-size(1.6rem);
-        .lib-css(border-top, @theme-full-checkout-step-title__border);
+        .lib-css(border-top, @theme-full-checkout__border);
 
         margin-bottom: unset;
         margin-top: unset;
@@ -50,7 +49,7 @@
 
     .abs-theme-full-checkout-sub-title-sessions-border-bottom {
         .lib-heading(h3);
-        .lib-css(border-bottom, @theme-full-checkout-step-title__border);
+        .lib-css(border-bottom, @theme-full-checkout__border);
 
         margin-bottom: @indent__s + @indent__xs;
         margin-left: unset;
@@ -62,7 +61,7 @@
             
             .lib-css(padding, @indent__s @indent__xl @indent__s 0);
 
-            .lib-icon-font(@icon-down, @_icon-font-size: 12px, @_icon-font-line-height: 12px, @_icon-font-text-hide: true, @_icon-font-margin: 3px 0 0, @_icon-font-position: after, @_icon-font-display: block);
+            .lib-icon-font(@theme-full-checkout-collapsible-icon__down, @_icon-font-size: @theme-full-checkout-collapsible-icon__font-size, @_icon-font-line-height: @theme-full-checkout-collapsible-icon__line-height, @_icon-font-text-hide: @theme-full-checkout-collapsible-icon__text-hide, @_icon-font-margin: @theme-full-checkout-collapsible-icon__margin, @_icon-font-position: @theme-full-checkout-collapsible-icon__position, @_icon-font-display: @theme-full-checkout-collapsible-icon__display);
 
             border-bottom: @border-width__base solid @border-color__base;
             cursor: pointer;
@@ -85,7 +84,7 @@
 
         &.active {
             > .title {
-                .lib-icon-font-symbol(@_icon-font-content: @icon-up, @_icon-font-position: after);
+                .lib-icon-font-symbol(@_icon-font-content: @theme-full-checkout-collapsible-icon__up, @_icon-font-position: @theme-full-checkout-collapsible-icon__position);
             }
         }
     }

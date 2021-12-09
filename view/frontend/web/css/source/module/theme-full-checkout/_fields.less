@@ -5,13 +5,6 @@
  */
 
 //
-//  Variables
-//  _____________________________________________
-
-@theme-full-checkout-icon-view-password__height: 2rem;
-@theme-full-checkout-icon-view-password__width: 2rem;
-
-//
 //  Common
 //  _____________________________________________
 
@@ -61,10 +54,10 @@
                                     border-radius: @theme-full-checkout__border-radius;
                                     font-weight: 600;
                                     height: unset;
-                                    padding-bottom: @theme-full-checkout-fields-input__padding-bottom;
-                                    padding-left: @theme-full-checkout-fields-input__padding-left;
-                                    padding-right: @theme-full-checkout-fields-input__padding-right;
-                                    padding-top: @theme-full-checkout-fields-input__padding-top;
+                                    padding-bottom: @theme-full-checkout-fields-label-floating-input__padding-bottom;
+                                    padding-left: @theme-full-checkout-fields-label-floating-input__padding-left;
+                                    padding-right: @theme-full-checkout-fields-label-floating-input__padding-right;
+                                    padding-top: @theme-full-checkout-fields-label-floating-input__padding-top;
                                     width: 100%;
                                     
 
@@ -96,8 +89,8 @@
                                 input:focus,
                                 textarea:focus {
                                     box-shadow: none;
-                                    padding-bottom: calc(@label_floating-padding-y / 3);
-                                    padding-top: calc(@label_floating-padding-y + @label_floating-padding-y * (2 / 3));
+                                    padding-bottom: calc(@theme-full-checkout-fields-label-floating-aixs-y / 3);
+                                    padding-top: calc(@theme-full-checkout-fields-label-floating-aixs-y + @theme-full-checkout-fields-label-floating-aixs-y * (2 / 3));
                                 }
 
                                 select:not(:checked) ~ .label,
@@ -107,10 +100,10 @@
                                 input:focus ~ .label,
                                 textarea:focus ~ .label {
                                     color: @theme__color__primary;
-                                    font-size: @theme-full-checkout-fields-label__font-size;
-                                    padding-bottom: calc(@label_floating-padding-y / 3);
-                                    padding-left: @indent__s;
-                                    padding-top: calc(@label_floating-padding-y / 3);
+                                    font-size: @theme-full-checkout-fields-label-floating-label__font-size;
+                                    padding-bottom: calc(@theme-full-checkout-fields-label-floating-aixs-y / 3);
+                                    padding-left: @theme-full-checkout-fields-label-floating-input__padding-left;
+                                    padding-top: calc(@theme-full-checkout-fields-label-floating-aixs-y / 3);
                                 }
 
                                 input[type='radio'] {
@@ -123,7 +116,7 @@
                                     font-weight: normal;
                                     margin-bottom: 0;
                                     overflow: hidden;
-                                    padding: @label_floating-padding-y @label_floating-padding-x;
+                                    padding: @theme-full-checkout-fields-label-floating-aixs-y @theme-full-checkout-fields-label-floating-aixs-x;
                                     pointer-events: none;
                                     position: absolute;
                                     text-overflow: ellipsis;
@@ -161,7 +154,8 @@
                                                 @_button-icon-font-vertical-align: middle,
                                                 @_button-background: @form-element-input__background,
                                                 @_button-background-hover: @form-element-input__background,
-                                                @_button-background-active: @form-element-input__background
+                                                @_button-background-active: @form-element-input__background,
+                                                @_button-padding: @theme-full-checkout-fields-tooltip__padding
                                             );
 
                                             border-left-width: 0;
@@ -200,7 +194,7 @@
 
                                 &-information {
                                     .password-strength-meter-label {
-                                        font-size: @theme-full-checkout-fields-label__font-size;
+                                        font-size: @theme-full-checkout-fields-label-floating-label__font-size;
                                         padding-top: @indent__s;
                                     }
 
@@ -215,7 +209,6 @@
                             ._additional {
                                 &-element-addtional {
                                     .lib-button(@_button-background: @form-element-input__background, @_button-background-hover: @form-element-input__background, @_button-background-active: @form-element-input__background);
-                                    border-bottom-left-radius: 0;
                                     border-color: @form-element-input__border-color;
                                     border-left-width: 0;
                                     border-radius: @theme-full-checkout__border-radius;
@@ -224,6 +217,7 @@
                                     padding: @theme-full-checkout-fields-tooltip__padding;
                                     vertical-align: middle;
                                     width: 1%;
+                                    .lib-css(border-bottom-left-radius, 0);
 
                                     &:hover,
                                     &:focus {

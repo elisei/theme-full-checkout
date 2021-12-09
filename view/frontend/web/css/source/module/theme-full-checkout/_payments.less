@@ -122,25 +122,25 @@
 				&:extend(.abs-add-box-sizing-desktop-m all);
 
 				.payment-method {
-					border-left: @theme-full-checkout-step-title__border;
-					border-right: @theme-full-checkout-step-title__border;
+					border-left: @theme-full-checkout__border;
+					border-right: @theme-full-checkout__border;
 					.lib-css(background-color, @theme-full-checkout-step-content-mobile__background);
 
 					&:first-child {
-						border-top: @theme-full-checkout-step-title__border;
+						border-top: @theme-full-checkout__border;
 						border-top-right-radius: @theme-full-checkout__border-radius;
 						border-top-left-radius: @theme-full-checkout__border-radius;
 					}
 
 					&:last-child {
-						border-bottom: @theme-full-checkout-step-title__border;
+						border-bottom: @theme-full-checkout__border;
 						border-bottom-right-radius: @theme-full-checkout__border-radius;
 						border-bottom-left-radius: @theme-full-checkout__border-radius;
 					}
 
 					&._active {
 						.payment-method-title {
-							border-bottom: @theme-full-checkout-step-title__border;
+							border-bottom: @theme-full-checkout__border;
 						}
 					}
 				}
