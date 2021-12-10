@@ -51,6 +51,7 @@
 
 @theme-full-checkout-step-title__border: unset;
 @theme-full-checkout-step-title-mobile__font-size: 18px;
+@theme-full-checkout-step-title__padding: @indent__base;
 
 //
 //  Header - Logo
@@ -149,13 +150,13 @@
 @theme-full-checkout-tooltip-icon-arrow__font-size: 10px;
 @theme-full-checkout-tooltip-icon-arrow__left: -( @theme-full-checkout-tooltip-content__padding + @theme-full-checkout-tooltip-icon-arrow__font-size - @theme-full-checkout-tooltip-content__border-width);
 
-@theme-full-checkout-tooltip-icon__color: @color-gray-light2;
+@theme-full-checkout-tooltip-icon__color: @theme-full-checkout__active__color;
 @theme-full-checkout-tooltip-icon__content: @icon-help;
 @theme-full-checkout-tooltip-icon__font-size: 24px;
 @theme-full-checkout-tooltip-icon__hover__color: @theme-full-checkout__active__color;
 
-@theme-full-checkout-tooltip-content__background-color: @color-gray-light01;
-@theme-full-checkout-tooltip-content__border-color: @color-gray60;
+@theme-full-checkout-tooltip-content__background-color: @theme-full-checkout__color__complementary;
+@theme-full-checkout-tooltip-content__border-color: @theme__color__primary;
 @theme-full-checkout-tooltip-content__border-width: 1px;
 @theme-full-checkout-tooltip-content__font-size: @font-size__base;
 @theme-full-checkout-tooltip-content__padding: 12px;
@@ -164,7 +165,7 @@
 
 @theme-full-checkout-tooltip-content-mobile-popup__width: 150px;
 @theme-full-checkout-tooltip-content-mobile__right: -(@indent__s);
-@theme-full-checkout-tooltip-content-mobile__top: 30px + @theme-full-checkout-tooltip-icon-arrow__font-size;
+@theme-full-checkout-tooltip-content-mobile__top: @theme-full-checkout-fields-label-floating-aixs-y + @theme-full-checkout-tooltip-icon-arrow__font-size;
 
 
 //
@@ -277,7 +278,7 @@
 @theme-full-sidebar-shipping-information-edit-icon__hover__color: @theme-full-checkout__active__color;
 
 @theme-full-sidebar-identification-information__padding: @indent__l;
-@theme-full-sidebar-identification-information__line-height: @checkout-billing-address-details__line-height;
+@theme-full-sidebar-identification-information__line-height: 1;
 
 @theme-full-sidebar-identification-information-edit-icon-image__content: '@{baseDir}O2TI_ThemeFullCheckout/images/pen.svg';
 @theme-full-sidebar-identification-information-edit-icon__color: @minicart-icons-color;
@@ -286,3 +287,9 @@
 @theme-full-sidebar-identification-information-edit-icon__line-height: 18px;
 @theme-full-sidebar-identification-information-edit-icon__top: 2px;
 @theme-full-sidebar-identification-information-edit-icon__hover__color: @theme-full-checkout__active__color;
+
+//
+//  Fixed Magento Luma Theme
+//  _____________________________________________
+
+@checkout-payment-option-title__border: @theme-full-checkout-payment-option-title__border;

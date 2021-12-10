@@ -214,6 +214,21 @@ class ThemeFullCheckoutLayoutPlugin
     }
 
     /**
+     * Change Components Template ReCaptcha.
+     *
+     * @param array $jsLayout
+     *
+     * @return array
+     */
+    public function changeTemplateReCaptcha(array $jsLayout): ?array
+    {
+        // phpcs:ignore
+        $jsLayout['components']['checkout']['children']['steps']['children']['billing-step']['children']['payment']['children']['beforeMethods']['children']['place-order-recaptcha-container']['template'] = 'O2TI_ThemeFullCheckout/ReCaptchaCheckout/payment-recaptcha-container';
+
+        return $jsLayout;
+    }
+
+    /**
      * Select Components for Change.
      *
      * @param LayoutProcessor $layoutProcessor
@@ -234,6 +249,7 @@ class ThemeFullCheckoutLayoutPlugin
             if ($this->config->isMoveAddressBilling()) {
                 $jsLayout = $this->moveAddressBilling($jsLayout);
             }
+            $jsLayout = $this->changeTemplateReCaptcha($jsLayout);
             $layoutProcessor = $layoutProcessor;
         }
 
