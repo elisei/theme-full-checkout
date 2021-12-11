@@ -51,6 +51,7 @@
                                 input[type='file'],
                                 textarea,
                                 select {
+                                    background-color: @form-element-input__background;
                                     border-radius: @theme-full-checkout__border-radius;
                                     font-weight: 600;
                                     height: unset;
@@ -162,8 +163,11 @@
 
                                             &:hover,
                                             &:focus {
+                                                background-color: @form-element-input__background;
                                                 border-left-width: 0;
                                             }
+                                            .lib-css(border-bottom-left-radius, 0);
+                                            .lib-css(border-bottom-left-radius, 0);
                                             .lib-css(line-height, @theme-full-checkout-icon-view-password__line-height);
 
                                             /**
@@ -218,9 +222,11 @@
                                     vertical-align: middle;
                                     width: 1%;
                                     .lib-css(border-bottom-left-radius, 0);
+                                    .lib-css(border-top-left-radius, 0);
 
                                     &:hover,
                                     &:focus {
+                                        background-color: @form-element-input__background;
                                         border-left-width: 0;
                                     }
 
@@ -254,7 +260,7 @@
                         animation-delay: 10s;
                         animation-iteration-count: 2;
                         .field-error {
-                            background: @color-white;
+                            background: @form-element-input__background;
                             border: 1px solid @error__color;
                             border-radius: 3px;
                             font-size: 10px;
@@ -310,9 +316,11 @@
                                 &._with-tooltip {
                                     ._additional {
                                         &-element-addtional {
+                                            background-color: @form-element-input__background;
                                             border-color: @theme-full-checkout-form-element-input-error__border-color;
 
                                             button {
+                                                background-color: @form-element-input__background;
                                                 border-color: @theme-full-checkout-form-element-input-error__border-color;
                                             }
                                         }
