@@ -9,7 +9,7 @@
 //  _____________________________________________
 
 & when (@media-common = true) {
-    .full-checkout {
+    .body-full-checkout {
         .modal-popup {
             &.modal-slide {
                 left: 0;
@@ -37,7 +37,8 @@
 //  _____________________________________________
 
 .media-width(@extremum, @break) when (@extremum = 'max') and (@break = @screen__m) {
-    .full-checkout {
+    .body-full-checkout {
+        .lib-css(max-width, 100%);
         .modal-popup {
             .modal-footer {
                 .action-save-address {
@@ -57,7 +58,7 @@
 //  _____________________________________________
 
 .media-width(@extremum, @break) when (@extremum = 'min') and (@break = @screen__m) {
-    .full-checkout {
+    .body-full-checkout {
         .modal-popup {
             .form-shipping-address {
                 .lib-css(max-width, @theme-full-checkout-shipping-address__max-width);
@@ -74,7 +75,7 @@
 }
 
 .media-width(@extremum, @break) when (@extremum = 'min') and (@break = @screen__l) {
-    .full-checkout {
+    .body-full-checkout {
         .modal-popup {
             .modal-inner-wrap {
                 .lib-css(margin-left, -(@theme-full-checkout-modal-popup__width/2));
