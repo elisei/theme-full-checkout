@@ -32,9 +32,9 @@
                             &.input-main {
                                 background-color: @form-element-input__background;
                                 border-color: @form-element-input__border-color;
+                                border-radius: @theme-full-checkout__border-radius;
                                 border-style: solid;
                                 border-width: 1px;
-                                border-radius: @theme-full-checkout__border-radius;
                             }
                         }
 
@@ -102,7 +102,6 @@
                                     padding-bottom: calc(@theme-full-checkout-fields-label-floating-aixs-y / 3);
                                     padding-top: calc(@theme-full-checkout-fields-label-floating-aixs-y + @theme-full-checkout-fields-label-floating-aixs-y * (2 / 3));
                                     .lib-css(border, unset);
-
                                 }
 
                                 select:not(:checked) ~ .label,
@@ -119,7 +118,6 @@
                                     padding-left: @theme-full-checkout-fields-label-floating-input__padding-left;
                                     padding-top: calc(@theme-full-checkout-fields-label-floating-aixs-y / 3);
                                     .lib-css(border, unset);
-
                                 }
 
                                 input[type='radio'] {
@@ -148,10 +146,10 @@
                             }
 
                             &-element-addtional {
+                                border-radius: @theme-full-checkout__border-radius;
                                 display: table-cell;
                                 vertical-align: top;
                                 width: 1%;
-                                border-radius: @theme-full-checkout__border-radius;
                             }
                         }
 
@@ -162,16 +160,7 @@
                                         .lib-css(border, unset);
 
                                         &.icon-view-password {
-                                            .lib-button(
-                                                @_button-icon-use: true,
-                                                @_button-icon-font-text-hide: true,
-                                                @_button-icon-font-position: before,
-                                                @_button-icon-font-vertical-align: middle,
-                                                @_button-background: inherit,
-                                                @_button-background-hover: inherit,
-                                                @_button-background-active: inherit,
-                                                @_button-padding: @theme-full-checkout-fields-tooltip__padding
-                                            );
+                                            .lib-button(@_button-icon-use: true, @_button-icon-font-text-hide: true, @_button-icon-font-position: before, @_button-icon-font-vertical-align: middle, @_button-background: inherit, @_button-background-hover: inherit, @_button-background-active: inherit, @_button-padding: @theme-full-checkout-fields-tooltip__padding);
 
                                             .lib-css(border, unset);
 
