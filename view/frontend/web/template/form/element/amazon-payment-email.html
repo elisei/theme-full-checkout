@@ -29,7 +29,7 @@
     <fieldset id="customer-email-fieldset" class="fieldset" data-bind="blockLoader: isLoading">
         <div class="field required theme-full-checkout-fields-floating-label">
             <div class="control _with-tooltip">
-                <div class="control-row">
+                <div class="control-row input-main">
                     <div class="_additional-element-input">
                         <input class="input-text"
                                type="email"
@@ -47,7 +47,7 @@
                         <!-- ko template: 'ui/form/element/helper/tooltip' --><!-- /ko -->
                     </div>
                 </div>
-                <div class="control-row">
+                <div class="control-row input-information">
                     <span class="note" data-bind="fadeVisible: isPasswordVisible() == false"><!-- ko i18n: 'You can create an account after checkout.'--><!-- /ko --></span>
                 </div>
             </div>
@@ -57,7 +57,7 @@
         <fieldset class="fieldset hidden-fields" data-bind="fadeVisible: isPasswordVisible">
             <div class="field theme-full-checkout-fields-floating-label">
                 <div class="control">
-                    <div class="control-row">
+                    <div class="control-row input-main">
                         <div class="_additional-element-input">
                             <input class="input-text"
                                    placeholder="Password"
@@ -70,7 +70,7 @@
                             </label>
                         </div>
                     </div>
-                    <div class="control-row">
+                    <div class="control-row input-information">
                         <span class="note" data-bind="i18n: 'You already have an account with us. Sign in or continue as guest.'"></span>
                     </div>
                 </div>

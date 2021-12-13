@@ -7,7 +7,7 @@
 -->
 <div class="field theme-full-checkout-fields-floating-label" data-bind="visible: visible, attr: {'name': element.dataScope}, css: additionalClasses">
     <div class="control" data-bind="css: {'_with-tooltip': element.tooltip, '_with-button': element.inputName === 'password' }">
-        <div class="control-row">
+        <div class="control-row input-main">
             <div class="_additional-element-input">
                 <!-- ko ifnot: element.hasAddons() -->
                     <!-- ko template: element.elementTmpl --><!-- /ko -->
@@ -50,7 +50,7 @@
                 </div>
             <!-- /ko -->
         </div>
-        <div class="control-row">
+        <div class="control-row input-information">
             <div class="_additional-information">
                 <!-- ko if: element.inputName === 'password' -->
                     

@@ -29,6 +29,13 @@
                         .control-row {
                             display: table;
                             width: 100%;
+                            &.input-main {
+                                background-color: @form-element-input__background;
+                                border-color: @form-element-input__border-color;
+                                border-style: solid;
+                                border-width: 1px;
+                                border-radius: @theme-full-checkout__border-radius;
+                            }
                         }
 
                         ._additional {
@@ -51,7 +58,7 @@
                                 input[type='file'],
                                 textarea,
                                 select {
-                                    background-color: @form-element-input__background;
+                                    background-color: inherit;
                                     border-radius: @theme-full-checkout__border-radius;
                                     font-weight: 600;
                                     height: unset;
@@ -60,7 +67,7 @@
                                     padding-right: @theme-full-checkout-fields-label-floating-input__padding-right;
                                     padding-top: @theme-full-checkout-fields-label-floating-input__padding-top;
                                     width: 100%;
-                                    
+                                    .lib-css(border, unset);
 
                                     &::focus {
                                         box-shadow: @theme-full-checkout__box-shadow;
@@ -89,9 +96,13 @@
                                 select:focus,
                                 input:focus,
                                 textarea:focus {
+                                    background-color: inherit;
+                                    border-color: inherit;
                                     box-shadow: none;
                                     padding-bottom: calc(@theme-full-checkout-fields-label-floating-aixs-y / 3);
                                     padding-top: calc(@theme-full-checkout-fields-label-floating-aixs-y + @theme-full-checkout-fields-label-floating-aixs-y * (2 / 3));
+                                    .lib-css(border, unset);
+
                                 }
 
                                 select:not(:checked) ~ .label,
@@ -100,11 +111,15 @@
                                 select:focus ~ .label,
                                 input:focus ~ .label,
                                 textarea:focus ~ .label {
+                                    background-color: inherit;
+                                    border-color: inherit;
                                     color: @theme__color__primary;
                                     font-size: @theme-full-checkout-fields-label-floating-label__font-size;
                                     padding-bottom: calc(@theme-full-checkout-fields-label-floating-aixs-y / 3);
                                     padding-left: @theme-full-checkout-fields-label-floating-input__padding-left;
                                     padding-top: calc(@theme-full-checkout-fields-label-floating-aixs-y / 3);
+                                    .lib-css(border, unset);
+
                                 }
 
                                 input[type='radio'] {
@@ -124,7 +139,7 @@
                                     top: 0;
                                     transition: all .1s ease-in-out;
                                     white-space: nowrap;
-                                    width: 70%;
+                                    width: 65%;
                                 }
 
                                 div.mage-error[generated] {
@@ -136,6 +151,7 @@
                                 display: table-cell;
                                 vertical-align: top;
                                 width: 1%;
+                                border-radius: @theme-full-checkout__border-radius;
                             }
                         }
 
@@ -143,9 +159,7 @@
                             ._additional {
                                 &-element-addtional {
                                     button {
-                                        border-bottom-left-radius: 0;
-                                        border-radius: @theme-full-checkout__border-radius;
-                                        border-top-left-radius: 0;
+                                        .lib-css(border, unset);
 
                                         &.icon-view-password {
                                             .lib-button(
@@ -153,21 +167,20 @@
                                                 @_button-icon-font-text-hide: true,
                                                 @_button-icon-font-position: before,
                                                 @_button-icon-font-vertical-align: middle,
-                                                @_button-background: @form-element-input__background,
-                                                @_button-background-hover: @form-element-input__background,
-                                                @_button-background-active: @form-element-input__background,
+                                                @_button-background: inherit,
+                                                @_button-background-hover: inherit,
+                                                @_button-background-active: inherit,
                                                 @_button-padding: @theme-full-checkout-fields-tooltip__padding
                                             );
 
-                                            border-left-width: 0;
+                                            .lib-css(border, unset);
 
                                             &:hover,
                                             &:focus {
-                                                background-color: @form-element-input__background;
-                                                border-left-width: 0;
+                                                background-color: inherit;
+                                                .lib-css(border, unset);
                                             }
-                                            .lib-css(border-bottom-left-radius, 0);
-                                            .lib-css(border-bottom-left-radius, 0);
+                                           
                                             .lib-css(line-height, @theme-full-checkout-icon-view-password__line-height);
 
                                             /**
@@ -190,9 +203,8 @@
 
                                 &-element-input {
                                     input {
-                                        border-bottom-right-radius: 0;
-                                        border-right-width: 0;
-                                        border-top-right-radius: 0;
+                                        .lib-css(border, unset);
+
                                     }
                                 }
 
@@ -212,22 +224,17 @@
                         &._with-tooltip {
                             ._additional {
                                 &-element-addtional {
-                                    .lib-button(@_button-background: @form-element-input__background, @_button-background-hover: @form-element-input__background, @_button-background-active: @form-element-input__background);
-                                    border-color: @form-element-input__border-color;
-                                    border-left-width: 0;
-                                    border-radius: @theme-full-checkout__border-radius;
-                                    border-top-left-radius: 0;
+                                    .lib-button(@_button-background: inherit, @_button-background-hover: inherit, @_button-background-active: inherit);
                                     display: table-cell;
                                     padding: @theme-full-checkout-fields-tooltip__padding;
                                     vertical-align: middle;
                                     width: 1%;
-                                    .lib-css(border-bottom-left-radius, 0);
-                                    .lib-css(border-top-left-radius, 0);
+                                    .lib-css(border, unset);
 
                                     &:hover,
                                     &:focus {
-                                        background-color: @form-element-input__background;
-                                        border-left-width: 0;
+                                        background-color: inherit;
+                                        .lib-css(border, unset);
                                     }
 
                                     .field-tooltip {
@@ -247,8 +254,9 @@
                                 &-element-input {
                                     input {
                                         border-bottom-right-radius: 0;
-                                        border-right-width: 0;
                                         border-top-right-radius: 0;
+                                        .lib-css(border, unset);
+
                                     }
                                 }
                             }
@@ -260,9 +268,6 @@
                         animation-delay: 10s;
                         animation-iteration-count: 2;
                         .field-error {
-                            background: @form-element-input__background;
-                            border: 1px solid @error__color;
-                            border-radius: 3px;
                             font-size: 10px;
                             font-weight: 500;
                             letter-spacing: .4px;
@@ -280,6 +285,13 @@
                                 position: absolute;
                                 top: -8px;
                                 width: 0;
+                            }
+                        }
+
+                        .control-row {
+                            &.input-main {
+                                background-color: @form-element-input__background;
+                                border-color: @error__color;
                             }
                         }
 
@@ -308,21 +320,6 @@
                                         input:focus ~ .label,
                                         textarea:focus ~ .label {
                                             color: @error__color;
-                                        }
-                                    }
-                                }
-
-                                &._with-button,
-                                &._with-tooltip {
-                                    ._additional {
-                                        &-element-addtional {
-                                            background-color: @form-element-input__background;
-                                            border-color: @theme-full-checkout-form-element-input-error__border-color;
-
-                                            button {
-                                                background-color: @form-element-input__background;
-                                                border-color: @theme-full-checkout-form-element-input-error__border-color;
-                                            }
                                         }
                                     }
                                 }
