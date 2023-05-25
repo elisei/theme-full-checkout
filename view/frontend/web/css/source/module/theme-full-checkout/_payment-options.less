@@ -70,40 +70,6 @@
                 margin: 0 0 @indent__base;
             }
 
-            .credit-card-types {
-                padding: 0;
-
-                .item {
-                    display: inline-block;
-                    list-style: none;
-                    margin: 0 @indent__xs 0 0;
-                    vertical-align: top;
-
-                    &._active {
-                        font-weight: @font-weight__bold;
-
-                        img {
-                            filter: grayscale(0%);
-                        }
-                    }
-
-                    &._inactive {
-                        opacity: .4;
-                    }
-
-                    span {
-                        display: inline-block;
-                        padding-top: 6px;
-                        vertical-align: top;
-                    }
-                }
-
-                img {
-                    filter: grayscale(100%); // For Webkit browsers
-                    transition: all .6s ease; // Fade to color for Chrome and Safari
-                }
-            }
-
             .ccard {
                 .legend {
                     &:extend(.abs-visually-hidden all);
