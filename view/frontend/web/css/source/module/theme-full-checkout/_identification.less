@@ -13,14 +13,18 @@
         .form-logout,
         .form-account-create {
             .actions-toolbar {
-                .action {
-                    &.primary {
-                        &:extend(.abs-button-l all);
-                        &:extend(.abs-button-responsive all);
-
-                        margin: @theme-full-checkout-step-identification-mobile-action__margin;
+                .button {
+                    &.action {
+                        &.primary {
+                            &:extend(.abs-button-l all);
+                            &:extend(.abs-button-responsive all);
+                        }
                     }
                 }
+            }
+
+            .g-recaptcha {
+                margin-bottom: @indent__base;
             }
         }
 
