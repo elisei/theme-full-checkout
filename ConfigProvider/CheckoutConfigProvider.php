@@ -1,58 +1,53 @@
 <?php
 /**
- * Copyright © 2021 O2TI. All rights reserved.
- *
- * @author  Bruno Elisei <brunoelisei@o2ti.com>
+ * Copyright © 2019 O2TI. All rights reserved.
  * See LICENSE.txt for license details.
  */
-
-namespace O2TI\ThemeFullCheckout\ConfigProvider;
+namespace O2TI\FullCheckout\ConfigProvider;
 
 use Magento\Checkout\Model\ConfigProviderInterface;
+use Magento\Framework\App\Config\ScopeConfigInterface;
+use Magento\Store\Model\ScopeInterface;
 use Magento\Theme\Block\Html\Header\Logo;
-use O2TI\ThemeFullCheckout\Helper\Config;
 
-/**
- * Checkout Config Provider Full Checkout Compoments.
- */
 class CheckoutConfigProvider implements ConfigProviderInterface
 {
     /**
-     * @var Config
+     * @var ScopeConfigInterface
      */
-    private $config;
+    protected ScopeConfigInterface $_scopeConfig;
 
     /**
      * @var Logo
      */
-    private $logo;
+    protected Logo $_logo;
 
     /**
-     * @param Logo   $logo
-     * @param Config $config
+     * @param ScopeConfigInterface $scopeConfig
+     * @param Logo $logo
      */
     public function __construct(
-        Logo $logo,
-        Config $config
+        ScopeConfigInterface $scopeConfig,
+        Logo $logo
     ) {
-        $this->logo = $logo;
-        $this->config = $config;
+        $this->_scopeConfig = $scopeConfig;
+        $this->_logo = $logo;
     }
 
     /**
-     * Get Config to Checkout Config.
-     *
-     * @return array
+     * @inheritdoc
      */
     public function getConfig(): array
     {
         return [
-            'theme_full_checkout_enable'    => $this->config->isEnabled(),
-            'move_address_billing'          => $this->config->isMoveAddressBilling(),
-            'logo_src'                      => $this->logo->getLogoSrc(),
-            'logo_width'                    => $this->logo->getLogoWidth(),
-            'logo_height'                   => $this->logo->getLogoHeight(),
-            'logo_alt'                      => $this->logo->getLogoAlt(),
+            'move_address_billing' => $this->_scopeConfig->getValue(
+                'full_checkout/general/move_address_billing',
+                ScopeInterface::SCOPE_STORE
+            ),
+            'logo_src'             => $this->_logo->getLogoSrc(),
+            'logo_width'           => $this->_logo->getLogoWidth(),
+            'logo_height'          => $this->_logo->getLogoHeight(),
+            'logo_alt'             => $this->_logo->getLogoAlt(),
         ];
     }
 }
